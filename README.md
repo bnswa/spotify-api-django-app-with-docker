@@ -65,5 +65,5 @@ docker restart [CONTAINER_NAME]
 If you encounter any issues setting up or running the application, try the following:
 
 - Make sure you have the latest version of Docker and Docker Compose installed on your local machine.
-- If you're behind a corporate firewall, you may need to configure your proxy settings in the .env file.
+- If you're behind a firewall, you may need to configure your proxy settings in the .env file.
 - If you see a "port is already in use" error, you may need to stop any other processes that are using the same port (e.g. another instance of the application).
