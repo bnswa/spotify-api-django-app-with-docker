@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Playlist Form</title>
+</head>
+<body>
+  <h1>Create Playlist</h1>
+  <form action="{% url 'create-playlist-view' %}" method="post">
+    {% csrf_token %}
+    <label for="playlist_name">Playlist Name:</label><br>
+    <input type="text" id="playlist_name" name="playlist_name"><br>
+    <label for="playlist_description">Playlist Description:</label><br>
+    <input type="text" id="playlist_description" name="playlist_description"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  
+  <a href="{% url 'create-playlist-view' %}">Refresh Page</a>
+
+</body>
+</html>

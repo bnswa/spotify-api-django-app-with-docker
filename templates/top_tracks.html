@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Top Tracks for the User</title>
+</head>
+<body>
+<h1>Top Tracks for the User</h1>
+
+<ul>
+  {% for track in tracks %}
+  <li>{{ track.name }} by {{ track.artists }}</li>
+  {% endfor %}
+</ul>
+
+/body>
+</html>
+

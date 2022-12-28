@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Playlist Result</title>
+</head>
+<body>
+<h1>Playlist Created Successfully!</h1>
+
+<p>Name: {{ playlist_name }}</p>
+<p>Description: {{ playlist_description }}</p>
+<p>ID: {{ playlist_id }}</p>
+<a href="{% url 'create-playlist-view' %}">Add another playlist</a>
+
+</body>
+</html>
